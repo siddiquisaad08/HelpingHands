@@ -12,37 +12,35 @@ GitHub: [https://github.com/siddiquisaad08/HelpingHands](https://github.com/sidd
 
 ## 🧰 Tech Stack
 
-| Layer         | Technology               |
-|---------------|---------------------------|
-| Frontend      | React.js, Bootstrap       |
-| Backend       | Node.js, Express.js       |
-| Database      | MySQL (managed via MySQL Workbench) |
-| Authentication| JWT                       |
-| Media Storage | Local (via `/uploads`)    |
+| Layer         | Technology                       |
+|---------------|----------------------------------|
+| Frontend      | React.js, Bootstrap              |
+| Backend       | Node.js, Express.js              |
+| Database      | MySQL (managed via Workbench)    |
+| Authentication| JWT                              |
+| Media Storage | Local (via `/uploads`)           |
 
 ---
 
 ## 📁 Project Structure
 
+```
 HelpingHands/
-├── sevaX-frontend/ # Frontend (React)
-│ ├── public/
-│ └── src/
-│ └── components/
-│ └── pages/
-│ └── App.js
-├── sevaX-server/ # Backend (Node.js + Express)
-│ ├── config/ # DB connection
-│ ├── controllers/ # Request logic
-│ ├── middleware/ # Auth middleware
-│ ├── routes/ # Express routes
-│ ├── db/ # SQL schema files
-│ ├── uploads/ # Image storage
-│ └── index.js # Entry point
-
-yaml
-Copy
-Edit
+├── sevaX-frontend/           # Frontend (React)
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.js
+├── sevaX-server/             # Backend (Node.js + Express)
+│   ├── config/               # DB connection
+│   ├── controllers/          # Request logic
+│   ├── middleware/           # Auth middleware
+│   ├── routes/               # Express routes
+│   ├── db/                   # SQL schema files
+│   ├── uploads/              # Image storage
+│   └── index.js              # Entry point
+```
 
 ---
 
@@ -55,68 +53,67 @@ Edit
    git clone https://github.com/siddiquisaad08/HelpingHands.git
    cd HelpingHands/sevaX-frontend
    npm install
-Start frontend
+   ```
 
-bash
-Copy
-Edit
-npm start
-🔧 Backend Setup
-Navigate to backend
+2. **Start frontend**
+   ```bash
+   npm start
+   ```
 
-bash
-Copy
-Edit
-cd ../sevaX-server
-npm install
-Create MySQL database
+---
 
-Name it seva_x
+### 🔧 Backend Setup
 
-Import .sql file from db/ directory using MySQL Workbench
+1. **Navigate to backend**
+   ```bash
+   cd ../sevaX-server
+   npm install
+   ```
 
-Create .env file
+2. **Create MySQL database**
+   - Name it `seva_x`
+   - Import `.sql` file from `db/` directory using MySQL Workbench
 
-env
-Copy
-Edit
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=seva_x
-JWT_SECRET=your_jwt_secret
-Run backend
+3. **Create `.env` file**
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=seva_x
+   JWT_SECRET=your_jwt_secret
+   ```
 
-bash
-Copy
-Edit
-npm run dev
-✨ Features
-🔐 JWT-secured login and registration
+4. **Run backend**
+   ```bash
+   npm run dev
+   ```
 
-👥 Donor and NGO user roles with custom dashboards
+---
 
-🎁 Donation listing and image upload
+## ✨ Features
 
-📩 Request system for NGOs
+- 🔐 JWT-secured login and registration
+- 👥 Donor and NGO user roles with custom dashboards
+- 🎁 Donation listing and image upload
+- 📩 Request system for NGOs
+- 🧾 Admin panel for moderation and approvals
+- 📱 Fully responsive design
 
-🧾 Admin panel for moderation and approvals
+---
 
-📱 Fully responsive design
+## 🧪 Testing
 
-🧪 Testing
-Backend tested via Postman
+- Backend tested via Postman
+- Manual functional testing for user flows
 
-Manual functional testing for user flows
+---
 
-🙋 Contributing
-Fork this repository
+## 🙋 Contributing
 
-Create your feature branch (git checkout -b feature/new-feature)
+1. Fork this repository  
+2. Create your feature branch (`git checkout -b feature/new-feature`)  
+3. Commit your changes  
+4. Push to your branch (`git push origin feature/new-feature`)  
+5. Create a pull request
 
-Commit your changes
-
-Push to your branch (git push origin feature/new-feature)
-
-Create a pull request
-
+---
